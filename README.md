@@ -21,3 +21,13 @@ Set auto-complete emoji source to `ac-sources`
 (add-hook 'markdown-mode-hook 'ac-emoji-setup)
 (add-hook 'git-commit-mode-hook 'ac-emoji-setup)
 ```
+
+### MacOSX Users
+
+Please add following font configuration to your `init.el`
+
+```lisp
+(set-fontset-font
+ t 'symbol
+ (font-spec :family "Apple Color Emoji") nil 'prepend)
+```

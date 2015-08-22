@@ -36,9 +36,11 @@
   :group 'auto-complete)
 
 (defvar ac-emoji--candidates
-  (cl-loop for (key . codepoint) in ac-emoji--data
+  (cl-loop for emoji in ac-emoji--data
            collect
-           (popup-make-item key :summary codepoint)))
+           (popup-make-item (plist-get emoji :key)
+                            :document (plist-get emoji :description)
+                            :summary (plist-get emoji :codepoint))))
 
 ;;;###autoload
 (defun ac-emoji-setup ()

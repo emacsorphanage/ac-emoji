@@ -35,8 +35,10 @@
                when str
                collect
                (let ((codepoint (string-to-char str))
-                     (alias (aref (assoc-default 'aliases emoji) 0)))
-                 (list :key alias :codepoint codepoint))))))
+                     (alias (aref (assoc-default 'aliases emoji) 0))
+                     (description (assoc-default 'description emoji)))
+                 (list :key alias :codepoint codepoint
+                       :description description))))))
 
 (defun dump-emoji (emojis)
   (princ ";; This file is generated automatically. Don't change this file !!\n")
@@ -45,8 +47,10 @@
   (cl-loop for emoji in emojis
            for key = (plist-get emoji :key)
            for codepoint = (plist-get emoji :codepoint)
+           for description = (plist-get emoji :description)
            do
-           (princ (format "    (\":%s:\" . \"\\x%x\")\n" key codepoint)))
+           (princ (format "    (:key \":%s:\" :codepoint \"\\x%x\" :description \"%s\")\n"
+                          key codepoint description)))
   (princ "))\n")
   (princ "(provide 'ac-emoji-data)"))
 

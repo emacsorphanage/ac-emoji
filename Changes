@@ -1,4 +1,7 @@
 Revision history for ac-emoji.el
 
+Revision 0.02 2015/08/23 syohex
+  - Support description
+
 Revision 0.01 2015/08/22 syohex
   - Initial release

@@ -40,6 +40,19 @@ Please add following font configuration to your `init.el`
  (font-spec :family "Apple Color Emoji") nil 'prepend)
 ```
 
+### Linux Users
+
+Linux users can use [Symbola](http://zhm.github.io/symbola/) font.
+
+```lisp
+(set-fontset-font
+ t 'symbol
+ (font-spec :family "Symbola") nil 'prepend)
+```
+
+![linux-ac-emoji](image/ac-emoji-linux.png)
+
+
 [melpa-link]: http://melpa.org/#/ac-emoji
 [melpa-stable-link]: http://stable.melpa.org/#/ac-emoji
 [melpa-badge]: http://melpa.org/packages/ac-emoji-badge.svg

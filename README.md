@@ -53,6 +53,10 @@ Linux users can use [Symbola](http://zhm.github.io/symbola/) font.
 ![linux-ac-emoji](image/ac-emoji-linux.png)
 
 
+### Windows Users
+
+Windows 7 or higher installs emoji font as default. I suppose you need not to set font configuration(I confirmed only Windows7 and I don't understand Windows well).
+
 [melpa-link]: http://melpa.org/#/ac-emoji
 [melpa-stable-link]: http://stable.melpa.org/#/ac-emoji
 [melpa-badge]: http://melpa.org/packages/ac-emoji-badge.svg

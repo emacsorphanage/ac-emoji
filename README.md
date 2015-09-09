@@ -43,6 +43,7 @@ Please add following font configuration to your `init.el`
 ### Linux Users
 
 Linux users can use [Symbola](http://zhm.github.io/symbola/) font.
+Ubuntu/Debian provides Symbola as package, `ttf-ancient-fonts` or `ttf-ancient-fonts-symbola`.
 
 ```lisp
 (set-fontset-font

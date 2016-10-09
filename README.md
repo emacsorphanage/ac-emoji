@@ -5,7 +5,7 @@
 
 ## Screencast
 
-![ac-emoji](image/ac-emoji.gif)
+![Screenshot of ac-emoji](image/ac-emoji.gif)
 
 
 ## Installation
@@ -51,7 +51,7 @@ Ubuntu/Debian provides Symbola as package, `ttf-ancient-fonts` or `ttf-ancient-f
  (font-spec :family "Symbola") nil 'prepend)
 ```
 
-![linux-ac-emoji](image/ac-emoji-linux.png)
+![Screenshot of ac-emoji on Linux](image/ac-emoji-linux.png)
 
 
 ### Windows Users

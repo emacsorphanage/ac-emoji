@@ -32,7 +32,10 @@ Set auto-complete emoji source to `ac-sources`
 
 ### MacOSX Users
 
-Please add following font configuration to your `init.el`
+NOTE: This package does not work with Emacs 25.1 on MacOSX.
+
+
+Please add following font configuration to your `init.el`.
 
 ```lisp
 (set-fontset-font
